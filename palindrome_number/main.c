@@ -1,6 +1,15 @@
 #include <stdbool.h>
 #include <stdio.h>
 
+bool isPalindrome(int x);
+
+int main() {
+  bool result = isPalindrome(101);
+
+  printf("%d", result);
+  return result;
+}
+
 bool isPalindrome(int x) {
   int len = 0;
   int number = x;
@@ -33,11 +42,4 @@ bool isPalindrome(int x) {
   }
 
   return true;
-}
-
-int main() {
-  bool result = isPalindrome(10);
-
-  printf("%d", result);
-  return result;
 }
